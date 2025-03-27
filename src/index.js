@@ -21,6 +21,7 @@ app.listen(port, () => {
   console.log(`Listening http://localhost:${port}`);
 });
 
+console.log("Alteração feita na branch feature/conflito");
 console.log("Alteração feita na branch develop");
 
 module.exports = app;
