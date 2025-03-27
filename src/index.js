@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 app.get('/api', (req, res) => {
-  res.send('Hello world!');
+  res.send('Hello world.');
 });
 
 app.get('/api/test', (req, res) => {
@@ -20,5 +20,7 @@ app.get('/api/test-2', (req, res) => {
 app.listen(port, () => {
   console.log(`Listening http://localhost:${port}`);
 });
+
+console.log("Nova funcionalidade implementada!");
 
 module.exports = app;
