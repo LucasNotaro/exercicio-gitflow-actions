@@ -3,7 +3,7 @@ name: Versionamento Automático
 on:
   push:
     branches:
-      - develop
+      - main
 
 jobs:
   versionamento:
@@ -93,4 +93,5 @@ jobs:
           git add package.json
           git commit -m "chore(release): version ${{ env.new_version }}"
           git tag v${{ env.new_version }}
-          git push origin develop --tags
+          git push origin main --tags
+
