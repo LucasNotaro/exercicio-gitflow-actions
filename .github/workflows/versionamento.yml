@@ -76,12 +76,15 @@ jobs:
 
           echo "Nova versão: $NEW_VERSION"
           echo "new_version=$NEW_VERSION" >> $GITHUB_ENV
+          echo "current_version=$CURRENT_VERSION" >> $GITHUB_ENV
 
       - name: Atualizar versão no package.json
+        if: env.new_version != env.current_version
         run: |
           npm version ${{ env.new_version }} --no-git-tag-version
 
       - name: Commit e push
+        if: env.new_version != env.current_version
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
