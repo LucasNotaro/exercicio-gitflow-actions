@@ -26,5 +26,7 @@ console.log("Alteração feita na branch develop");
 console.log("Erro corrigido na produção!");
 console.log("Teste CI");
 console.log("Teste CI agora com o yml na branch correta");
+console.log("Nova funcionalidade para versionamento automático");
+
 
 module.exports = app;
