@@ -25,6 +25,6 @@ console.log("Alteração feita na branch feature/conflito");
 console.log("Alteração feita na branch develop");
 console.log("Erro corrigido na produção!");
 console.log("Teste CI");
-console.log("Teste C2");
+console.log("Teste CI");
 
 module.exports = app;
