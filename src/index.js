@@ -6,11 +6,11 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 app.get('/api', (req, res) => {
-  res.send('Hello world.');
+  res.send('Hello world!');
 });
 
 app.get('/api/test', (req, res) => {
-  res.send({ message: 'Endpoint de teste na branch master com merge'});
+  res.json({ message: 'Endpoint de teste' });
 });
 
 app.get('/api/test-2', (req, res) => {
